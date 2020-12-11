@@ -1,0 +1,9 @@
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Mapping\bin\Debug\netstandard2.1\ProTeamFinder.Services.Mapping.deps.json
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Mapping\bin\Debug\netstandard2.1\ProTeamFinder.Services.Mapping.dll
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Mapping\bin\Debug\netstandard2.1\ProTeamFinder.Services.Mapping.pdb
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Mapping\obj\Debug\netstandard2.1\ProTeamFinder.Services.Mapping.csprojAssemblyReference.cache
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Mapping\obj\Debug\netstandard2.1\ProTeamFinder.Services.Mapping.AssemblyInfoInputs.cache
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Mapping\obj\Debug\netstandard2.1\ProTeamFinder.Services.Mapping.AssemblyInfo.cs
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Mapping\obj\Debug\netstandard2.1\ProTeamFinder.Services.Mapping.csproj.CoreCompileInputs.cache
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Mapping\obj\Debug\netstandard2.1\ProTeamFinder.Services.Mapping.dll
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Mapping\obj\Debug\netstandard2.1\ProTeamFinder.Services.Mapping.pdb

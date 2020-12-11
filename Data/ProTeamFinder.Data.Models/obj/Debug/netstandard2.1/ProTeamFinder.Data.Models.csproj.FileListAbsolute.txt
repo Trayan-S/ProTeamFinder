@@ -1,0 +1,12 @@
+C:\ClashFinderApp\Data\ProTeamFinder.Data.Models\bin\Debug\netstandard2.1\ProTeamFinder.Data.Models.deps.json
+C:\ClashFinderApp\Data\ProTeamFinder.Data.Models\bin\Debug\netstandard2.1\ProTeamFinder.Data.Models.dll
+C:\ClashFinderApp\Data\ProTeamFinder.Data.Models\bin\Debug\netstandard2.1\ProTeamFinder.Data.Models.pdb
+C:\ClashFinderApp\Data\ProTeamFinder.Data.Models\bin\Debug\netstandard2.1\ProTeamFinder.Data.Common.dll
+C:\ClashFinderApp\Data\ProTeamFinder.Data.Models\bin\Debug\netstandard2.1\ProTeamFinder.Data.Common.pdb
+C:\ClashFinderApp\Data\ProTeamFinder.Data.Models\obj\Debug\netstandard2.1\ProTeamFinder.Data.Models.csprojAssemblyReference.cache
+C:\ClashFinderApp\Data\ProTeamFinder.Data.Models\obj\Debug\netstandard2.1\ProTeamFinder.Data.Models.AssemblyInfoInputs.cache
+C:\ClashFinderApp\Data\ProTeamFinder.Data.Models\obj\Debug\netstandard2.1\ProTeamFinder.Data.Models.AssemblyInfo.cs
+C:\ClashFinderApp\Data\ProTeamFinder.Data.Models\obj\Debug\netstandard2.1\ProTeamFinder.Data.Models.csproj.CoreCompileInputs.cache
+C:\ClashFinderApp\Data\ProTeamFinder.Data.Models\obj\Debug\netstandard2.1\ProTeamFinder.Data.Models.csproj.CopyComplete
+C:\ClashFinderApp\Data\ProTeamFinder.Data.Models\obj\Debug\netstandard2.1\ProTeamFinder.Data.Models.dll
+C:\ClashFinderApp\Data\ProTeamFinder.Data.Models\obj\Debug\netstandard2.1\ProTeamFinder.Data.Models.pdb

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kNzuGhoWemtSCDo46KhKAjRSGhyTb9mzCk5y4kUUjgNGW3MayuEnRAUc7SKBq8YAKTVRVPLQoiLSpCX5ajJgfQ==",
+  "success": true,
+  "projectFilePath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services\\ProTeamFinder.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Trayan\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.304\\stylecop.analyzers.1.2.0-beta.304.nupkg.sha512",
+    "C:\\Users\\Trayan\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.304\\stylecop.analyzers.unstable.1.2.0.304.nupkg.sha512"
+  ],
+  "logs": []
+}

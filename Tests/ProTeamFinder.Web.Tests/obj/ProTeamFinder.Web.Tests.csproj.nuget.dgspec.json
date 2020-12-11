@@ -1,0 +1,947 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\ClashFinderApp\\Tests\\ProTeamFinder.Web.Tests\\ProTeamFinder.Web.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Common\\ProTeamFinder.Data.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Common\\ProTeamFinder.Data.Common.csproj",
+        "projectName": "ProTeamFinder.Data.Common",
+        "projectPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Common\\ProTeamFinder.Data.Common.csproj",
+        "packagesPath": "C:\\Users\\Trayan\\.nuget\\packages\\",
+        "outputPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Trayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.304, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Models\\ProTeamFinder.Data.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Models\\ProTeamFinder.Data.Models.csproj",
+        "projectName": "ProTeamFinder.Data.Models",
+        "projectPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Models\\ProTeamFinder.Data.Models.csproj",
+        "packagesPath": "C:\\Users\\Trayan\\.nuget\\packages\\",
+        "outputPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Trayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Common\\ProTeamFinder.Data.Common.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Common\\ProTeamFinder.Data.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.304, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data\\ProTeamFinder.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data\\ProTeamFinder.Data.csproj",
+        "projectName": "ProTeamFinder.Data",
+        "projectPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data\\ProTeamFinder.Data.csproj",
+        "packagesPath": "C:\\Users\\Trayan\\.nuget\\packages\\",
+        "outputPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Trayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Common\\ProTeamFinder.Data.Common.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Common\\ProTeamFinder.Data.Common.csproj"
+              },
+              "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Models\\ProTeamFinder.Data.Models.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Models\\ProTeamFinder.Data.Models.csproj"
+              },
+              "C:\\ClashFinderApp\\ProTeamFinder.Common\\ProTeamFinder.Common.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\ProTeamFinder.Common\\ProTeamFinder.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.304, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ClashFinderApp\\ProTeamFinder.Common\\ProTeamFinder.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ClashFinderApp\\ProTeamFinder.Common\\ProTeamFinder.Common.csproj",
+        "projectName": "ProTeamFinder.Common",
+        "projectPath": "C:\\ClashFinderApp\\ProTeamFinder.Common\\ProTeamFinder.Common.csproj",
+        "packagesPath": "C:\\Users\\Trayan\\.nuget\\packages\\",
+        "outputPath": "C:\\ClashFinderApp\\ProTeamFinder.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Trayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.304, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Data\\ProTeamFinder.Services.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Data\\ProTeamFinder.Services.Data.csproj",
+        "projectName": "ProTeamFinder.Services.Data",
+        "projectPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Data\\ProTeamFinder.Services.Data.csproj",
+        "packagesPath": "C:\\Users\\Trayan\\.nuget\\packages\\",
+        "outputPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Trayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Common\\ProTeamFinder.Data.Common.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Common\\ProTeamFinder.Data.Common.csproj"
+              },
+              "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Models\\ProTeamFinder.Data.Models.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Models\\ProTeamFinder.Data.Models.csproj"
+              },
+              "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.304, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj",
+        "projectName": "ProTeamFinder.Services.Mapping",
+        "projectPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj",
+        "packagesPath": "C:\\Users\\Trayan\\.nuget\\packages\\",
+        "outputPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Trayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.304, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Messaging\\ProTeamFinder.Services.Messaging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Messaging\\ProTeamFinder.Services.Messaging.csproj",
+        "projectName": "ProTeamFinder.Services.Messaging",
+        "projectPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Messaging\\ProTeamFinder.Services.Messaging.csproj",
+        "packagesPath": "C:\\Users\\Trayan\\.nuget\\packages\\",
+        "outputPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Messaging\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Trayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Sendgrid": {
+              "target": "Package",
+              "version": "[9.21.2, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.304, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services\\ProTeamFinder.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services\\ProTeamFinder.Services.csproj",
+        "projectName": "ProTeamFinder.Services",
+        "projectPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services\\ProTeamFinder.Services.csproj",
+        "packagesPath": "C:\\Users\\Trayan\\.nuget\\packages\\",
+        "outputPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Trayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.304, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ClashFinderApp\\Tests\\ProTeamFinder.Web.Tests\\ProTeamFinder.Web.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ClashFinderApp\\Tests\\ProTeamFinder.Web.Tests\\ProTeamFinder.Web.Tests.csproj",
+        "projectName": "ProTeamFinder.Web.Tests",
+        "projectPath": "C:\\ClashFinderApp\\Tests\\ProTeamFinder.Web.Tests\\ProTeamFinder.Web.Tests.csproj",
+        "packagesPath": "C:\\Users\\Trayan\\.nuget\\packages\\",
+        "outputPath": "C:\\ClashFinderApp\\Tests\\ProTeamFinder.Web.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Trayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web\\ProTeamFinder.Web.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web\\ProTeamFinder.Web.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.8.3, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.0.0-alpha07, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[87.0.4280.8800, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.304, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.Infrastructure\\ProTeamFinder.Web.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.Infrastructure\\ProTeamFinder.Web.Infrastructure.csproj",
+        "projectName": "ProTeamFinder.Web.Infrastructure",
+        "projectPath": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.Infrastructure\\ProTeamFinder.Web.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Trayan\\.nuget\\packages\\",
+        "outputPath": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Trayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.304, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.ViewModels\\ProTeamFinder.Web.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.ViewModels\\ProTeamFinder.Web.ViewModels.csproj",
+        "projectName": "ProTeamFinder.Web.ViewModels",
+        "projectPath": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.ViewModels\\ProTeamFinder.Web.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\Trayan\\.nuget\\packages\\",
+        "outputPath": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Trayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Models\\ProTeamFinder.Data.Models.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Models\\ProTeamFinder.Data.Models.csproj"
+              },
+              "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.304, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web\\ProTeamFinder.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web\\ProTeamFinder.Web.csproj",
+        "projectName": "ProTeamFinder.Web",
+        "projectPath": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web\\ProTeamFinder.Web.csproj",
+        "packagesPath": "C:\\Users\\Trayan\\.nuget\\packages\\",
+        "outputPath": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Trayan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Models\\ProTeamFinder.Data.Models.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data.Models\\ProTeamFinder.Data.Models.csproj"
+              },
+              "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data\\ProTeamFinder.Data.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Data\\ProTeamFinder.Data\\ProTeamFinder.Data.csproj"
+              },
+              "C:\\ClashFinderApp\\ProTeamFinder.Common\\ProTeamFinder.Common.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\ProTeamFinder.Common\\ProTeamFinder.Common.csproj"
+              },
+              "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Data\\ProTeamFinder.Services.Data.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Data\\ProTeamFinder.Services.Data.csproj"
+              },
+              "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj"
+              },
+              "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Messaging\\ProTeamFinder.Services.Messaging.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Messaging\\ProTeamFinder.Services.Messaging.csproj"
+              },
+              "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services\\ProTeamFinder.Services.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services\\ProTeamFinder.Services.csproj"
+              },
+              "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.Infrastructure\\ProTeamFinder.Web.Infrastructure.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.Infrastructure\\ProTeamFinder.Web.Infrastructure.csproj"
+              },
+              "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.ViewModels\\ProTeamFinder.Web.ViewModels.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.ViewModels\\ProTeamFinder.Web.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "BuildBundlerMinifier": {
+              "target": "Package",
+              "version": "[3.2.449, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Web.LibraryManager.Build": {
+              "target": "Package",
+              "version": "[2.1.113, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.304, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

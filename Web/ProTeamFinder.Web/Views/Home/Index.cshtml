@@ -1,0 +1,18 @@
+﻿@using ProTeamFinder.Common
+@{
+    this.ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron text-center bg-contrast" style="height: 20rem;">
+    <h1 class="text-center font-weight-bold">Welcome to @GlobalConstants.SystemName!</h1>
+    <h3 class="text-center">Find your dream team here!</h3>
+    @if (!this.User.Identity.IsAuthenticated) 
+    {
+            <a class="btn split-btn-dark text-primary px-5 mx-2 mt-5"
+               asp-area="Identity" asp-controller="Account" asp-action="Register">Register</a>
+            <a class="btn split-btn-dark text-primary px-5 mx-2 mt-5" 
+               asp-area="Identity" asp-controller="Account" asp-action="Login">Sign in</a>
+    }
+</div>
+
+

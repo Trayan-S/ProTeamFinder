@@ -1,0 +1,9 @@
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Messaging\bin\Debug\netstandard2.1\ProTeamFinder.Services.Messaging.deps.json
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Messaging\bin\Debug\netstandard2.1\ProTeamFinder.Services.Messaging.dll
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Messaging\bin\Debug\netstandard2.1\ProTeamFinder.Services.Messaging.pdb
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Messaging\obj\Debug\netstandard2.1\ProTeamFinder.Services.Messaging.csprojAssemblyReference.cache
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Messaging\obj\Debug\netstandard2.1\ProTeamFinder.Services.Messaging.AssemblyInfoInputs.cache
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Messaging\obj\Debug\netstandard2.1\ProTeamFinder.Services.Messaging.AssemblyInfo.cs
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Messaging\obj\Debug\netstandard2.1\ProTeamFinder.Services.Messaging.csproj.CoreCompileInputs.cache
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Messaging\obj\Debug\netstandard2.1\ProTeamFinder.Services.Messaging.dll
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Messaging\obj\Debug\netstandard2.1\ProTeamFinder.Services.Messaging.pdb
