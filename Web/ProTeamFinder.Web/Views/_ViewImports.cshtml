@@ -1,4 +1,9 @@
-﻿@using ProTeamFinder.Web
-@using ProTeamFinder.Web.ViewModels
+﻿@namespace ProTeamFinder
+@using Web
+@using Web.ViewModels
+@using Data.Models
+@using Microsoft.AspNetCore.Identity
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @addTagHelper *, ProTeamFinder.Web
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
