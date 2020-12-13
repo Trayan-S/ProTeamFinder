@@ -1,14 +1,31 @@
 ﻿namespace ProTeamFinder.Web.Controllers
 {
-    using Microsoft.AspNetCore.Mvc;
-    using ProTeamFinder.Web.ViewModels;
     using System.Diagnostics;
+
+    using Microsoft.AspNetCore.Mvc;
+    using ProTeamFinder.Services.Data;
+    using ProTeamFinder.Web.ViewModels;
+    using ProTeamFinder.Web.ViewModels.Home;
 
     public class HomeController : BaseController
     {
+        private readonly IGetCountService countsService;
+
+        public HomeController(IGetCountService countsService)
+        {
+            this.countsService = countsService;
+        }
+
         public IActionResult Index()
         {
-            return this.View();
+            var counts = this.countsService.GetCounts();
+            var viewModel = new IndexViewModel
+            {
+                UsersCount = counts.UsersCount,
+                TeamsCount = counts.TeamsCount,
+            };
+
+            return this.View(viewModel);
         }
 
         public IActionResult Privacy()

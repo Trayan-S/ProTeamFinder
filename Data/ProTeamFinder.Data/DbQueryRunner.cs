@@ -3,9 +3,8 @@
     using System;
     using System.Threading.Tasks;
 
-    using ProTeamFinder.Data.Common;
-
     using Microsoft.EntityFrameworkCore;
+    using ProTeamFinder.Data.Common;
 
     public class DbQueryRunner : IDbQueryRunner
     {

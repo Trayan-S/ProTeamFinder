@@ -1,8 +1,8 @@
 ﻿namespace ProTeamFinder.Data.Configurations
 {
-    using ProTeamFinder.Data.Models;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
+    using ProTeamFinder.Data.Models;
 
     public class ApplicationUserConfiguration : IEntityTypeConfiguration<ApplicationUser>
     {

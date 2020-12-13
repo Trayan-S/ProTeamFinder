@@ -2,9 +2,8 @@
 {
     using System.Linq;
 
-    using ProTeamFinder.Data.Common.Models;
-
     using Microsoft.EntityFrameworkCore;
+    using ProTeamFinder.Data.Common.Models;
 
     internal static class EntityIndexesConfiguration
     {

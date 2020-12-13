@@ -6,11 +6,10 @@
     using System.Threading;
     using System.Threading.Tasks;
 
-    using ProTeamFinder.Data.Common.Models;
-    using ProTeamFinder.Data.Models;
-
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
+    using ProTeamFinder.Data.Common.Models;
+    using ProTeamFinder.Data.Models;
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
@@ -25,6 +24,10 @@
         }
 
         public DbSet<Setting> Settings { get; set; }
+
+        public DbSet<Team> Teams { get; set; }
+
+        public DbSet<ApplicationUserTeam> ApplicationUserTeams { get; set; }
 
         public override int SaveChanges() => this.SaveChanges(true);
 
