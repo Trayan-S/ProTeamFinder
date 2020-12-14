@@ -36,7 +36,12 @@
                 </a>
             </div>
             <ul class="sidebar-menu do-nicescrol">
-                <li class="sidebar-header">MAIN NAVIGATION <hr /></li>
+                <li class="sidebar-header border-bottom border-light font-weight-bold">MAIN NAVIGATION</li>
+                <li>
+                    <a asp-area="" asp-controller="Teams" asp-action="Create">
+                        <i class="zmdi zmdi-accounts"></i> <span>Teams</span>
+                    </a>
+                </li>
                 <partial name="_SideBarLoginPartial"/>
             </ul>
         </div>

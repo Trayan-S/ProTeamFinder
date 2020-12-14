@@ -1,6 +1,6 @@
 ﻿@if (this.SignInManager.IsSignedIn(this.User))
 {
-    <li>
+    <li class="border-top border-light">
         <a asp-area="Identity" asp-page="/Account/Manage/Index">
             <i class="zmdi zmdi-face"></i> <span>Profile</span>
         </a>
@@ -8,7 +8,7 @@
 }
 else
 {
-    <li>
+    <li class="border-top border-light">
         <a asp-area="Identity" asp-page="/Account/Login">
             <i class="zmdi zmdi-lock"></i> <span>Login</span>
         </a>

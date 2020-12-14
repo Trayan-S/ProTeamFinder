@@ -44,4 +44,8 @@
     <ProjectReference Include="..\ProTeamFinder.Data.Models\ProTeamFinder.Data.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Seeding\SeedData\" />
+  </ItemGroup>
+
 </Project>

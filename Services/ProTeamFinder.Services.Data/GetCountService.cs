@@ -26,7 +26,7 @@
             var data = new CountsDto
             {
                 UsersCount = this.usersRepository.All().Count(),
-                TeamsCount = 0,
+                TeamsCount = this.teamsRepository.All().Count(),
             };
 
             return data;

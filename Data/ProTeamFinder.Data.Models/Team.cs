@@ -1,8 +1,9 @@
 ﻿namespace ProTeamFinder.Data.Models
 {
-    using ProTeamFinder.Data.Common.Models;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+
+    using ProTeamFinder.Data.Common.Models;
 
     public class Team : BaseDeletableModel<int>
     {
