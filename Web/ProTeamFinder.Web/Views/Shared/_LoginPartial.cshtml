@@ -1,4 +1,6 @@
-﻿<ul class="navbar-nav align-items-center right-nav-link">
+﻿@inject SignInManager<ApplicationUser> SignInManager
+
+<ul class="navbar-nav align-items-center right-nav-link">
     @if (this.SignInManager.IsSignedIn(this.User))
     {
         <li class="nav-item dropdown-lg">

@@ -1,4 +1,7 @@
-﻿@if (this.SignInManager.IsSignedIn(this.User))
+﻿@inject SignInManager<ApplicationUser> SignInManager
+
+
+@if (this.SignInManager.IsSignedIn(this.User))
 {
     <li class="border-top border-light">
         <a asp-area="Identity" asp-page="/Account/Manage/Index">

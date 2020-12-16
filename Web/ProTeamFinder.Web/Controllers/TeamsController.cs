@@ -1,5 +1,6 @@
 ﻿namespace ProTeamFinder.Web.Controllers
 {
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using ProTeamFinder.Web.ViewModels.Teams;
 
@@ -11,6 +12,7 @@
         }
 
         [HttpGet]
+        [Authorize]
         public IActionResult Create()
         {
             return this.View();
