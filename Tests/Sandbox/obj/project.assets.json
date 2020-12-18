@@ -1880,7 +1880,8 @@
         "dependencies": {
           "ProTeamFinder.Data.Common": "1.0.0",
           "ProTeamFinder.Data.Models": "1.0.0",
-          "ProTeamFinder.Services.Mapping": "1.0.0"
+          "ProTeamFinder.Services.Mapping": "1.0.0",
+          "ProTeamFinder.Web.ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ProTeamFinder.Services.Data.dll": {}
@@ -1913,6 +1914,20 @@
         },
         "runtime": {
           "bin/placeholder/ProTeamFinder.Services.Messaging.dll": {}
+        }
+      },
+      "ProTeamFinder.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "ProTeamFinder.Data.Models": "1.0.0",
+          "ProTeamFinder.Services.Mapping": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProTeamFinder.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProTeamFinder.Web.ViewModels.dll": {}
         }
       }
     }
@@ -6673,6 +6688,11 @@
       "type": "project",
       "path": "../../Services/ProTeamFinder.Services.Messaging/ProTeamFinder.Services.Messaging.csproj",
       "msbuildProject": "../../Services/ProTeamFinder.Services.Messaging/ProTeamFinder.Services.Messaging.csproj"
+    },
+    "ProTeamFinder.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../../Web/ProTeamFinder.Web.ViewModels/ProTeamFinder.Web.ViewModels.csproj",
+      "msbuildProject": "../../Web/ProTeamFinder.Web.ViewModels/ProTeamFinder.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {

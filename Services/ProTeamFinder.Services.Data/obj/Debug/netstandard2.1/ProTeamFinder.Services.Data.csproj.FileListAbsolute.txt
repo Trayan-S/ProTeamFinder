@@ -14,3 +14,5 @@ C:\ClashFinderApp\Services\ProTeamFinder.Services.Data\obj\Debug\netstandard2.1\
 C:\ClashFinderApp\Services\ProTeamFinder.Services.Data\obj\Debug\netstandard2.1\ProTeamFinder.Services.Data.csproj.CopyComplete
 C:\ClashFinderApp\Services\ProTeamFinder.Services.Data\obj\Debug\netstandard2.1\ProTeamFinder.Services.Data.dll
 C:\ClashFinderApp\Services\ProTeamFinder.Services.Data\obj\Debug\netstandard2.1\ProTeamFinder.Services.Data.pdb
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Data\bin\Debug\netstandard2.1\ProTeamFinder.Web.ViewModels.dll
+C:\ClashFinderApp\Services\ProTeamFinder.Services.Data\bin\Debug\netstandard2.1\ProTeamFinder.Web.ViewModels.pdb

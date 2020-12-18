@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\ProTeamFinder.Data.Common\ProTeamFinder.Data.Common.csproj" />
     <ProjectReference Include="..\..\Data\ProTeamFinder.Data.Models\ProTeamFinder.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Web\ProTeamFinder.Web.ViewModels\ProTeamFinder.Web.ViewModels.csproj" />
     <ProjectReference Include="..\ProTeamFinder.Services.Mapping\ProTeamFinder.Services.Mapping.csproj" />
   </ItemGroup>
 

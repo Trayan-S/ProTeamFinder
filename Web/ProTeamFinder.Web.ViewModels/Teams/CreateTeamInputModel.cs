@@ -13,7 +13,7 @@
         [Required]
         [StringLength(3, MinimumLength = 2, ErrorMessage ="Team tag should be 2 or 3 symbols!")]
         [Display(Name = "Team tag")]
-        public string TeamTag { get; set; }
+        public string Tag { get; set; }
 
         [Display(Name = "Description (optional)")]
         public string Description { get; set; }

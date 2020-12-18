@@ -1,0 +1,60 @@
+﻿@{
+    this.ViewData["Title"] = "Find team";
+}
+
+<h2 class="text-center font-weight-bold text-white my-5">@this.ViewData["Title"]</h2>
+<div class="row-group">
+    <div class="col-md-4 col-sm-5 col-lg-2 mb-2">
+        <a class="btn split-btn-primary btn-block" asp-area="" asp-controller="Teams" asp-action="Create">
+            Create team
+        </a>
+    </div>
+    <div class="col-md-4 col-sm-5 col-lg-2">
+        <a class="btn split-btn-info btn-block">
+            Your teams
+        </a>
+    </div>
+</div>
+<hr />
+<div class="row">
+    @for (int i = 0; i < 30; i++)
+    {
+        <div class="col-md-4 col-sm-5 col-lg-2">
+            <div class="card">
+                <div class="card-header text-center">
+                    <img class="rounded-circle img-thumbnail" src="~/CleanKillLogo.jpg" alt="Team image" style="width:100px; height:100px">
+                    <h5 class="card-title mt-2">Mark Stern</h5>
+                </div>
+                <div class="card-body text-center">
+                    <p class="text-center">Captain: smokebubblekush</p>
+                    <p>Modes: Clash</p>
+                    <div class="media justify-content-center">
+                        <img src="~/images/Position-icons/Bottom_icon.png" class="product-img" />
+                        <img src="~/images/Position-icons/Support_icon.png" class="product-img" />
+                        <img src="~/images/Position-icons/Jungle_icon.png" class="product-img" />
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-outline-info btn-block text-white">Team details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<hr />
+<ul class="pagination justify-content-center">
+    <li class="page-item">
+        <span class="page-link">Previous</span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+        <span class="page-link">
+            2
+            <span class="sr-only">(current)</span>
+        </span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+    </li>
+</ul>

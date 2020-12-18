@@ -1,9 +1,8 @@
 ﻿namespace ProTeamFinder.Web.Areas.Administration.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
     using ProTeamFinder.Services.Data;
     using ProTeamFinder.Web.ViewModels.Administration.Dashboard;
-
-    using Microsoft.AspNetCore.Mvc;
 
     public class DashboardController : AdministrationController
     {

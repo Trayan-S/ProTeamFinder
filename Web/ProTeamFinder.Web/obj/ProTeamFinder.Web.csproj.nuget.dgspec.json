@@ -345,6 +345,9 @@
               },
               "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj": {
                 "projectPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj"
+              },
+              "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.ViewModels\\ProTeamFinder.Web.ViewModels.csproj": {
+                "projectPath": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.ViewModels\\ProTeamFinder.Web.ViewModels.csproj"
               }
             }
           }

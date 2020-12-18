@@ -26,7 +26,7 @@
 </head>
 <body class="bg-theme bg-theme1">
     <!-- Start wrapper-->
-    <div id="wrapper">
+    <div id="wrapper" style="min-height: 100vh">
         <!--Start sidebar-wrapper-->
         <div id="sidebar-wrapper" data-simplebar="init" data-simplebar-auto-hide="true">
             <div class="brand-logo">
@@ -38,12 +38,21 @@
             <ul class="sidebar-menu do-nicescrol">
                 <li class="sidebar-header border-bottom border-light font-weight-bold">MAIN NAVIGATION</li>
                 <li>
-                    <a asp-area="" asp-controller="Teams" asp-action="Create">
+                    <a asp-area="" asp-controller="Teams" asp-action="All">
                         <i class="zmdi zmdi-accounts"></i> <span>Teams</span>
                     </a>
                 </li>
-                <partial name="_SideBarLoginPartial"/>
+                <partial name="_SideBarLoginPartial" />
             </ul>
+
+            @*TODO.*@
+            <footer class="footer">
+                <div class="container">
+                    <div class="text-center">
+                        &copy; @DateTime.Now.Year - @GlobalConstants.SystemName - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </div>
+                </div>
+            </footer>
         </div>
         <header class="topbar-nav">
             <nav class="navbar navbar-expand fixed-top">
@@ -76,16 +85,8 @@
                 <div class="overlay toggle-menu"></div>
             </div>
         </div>
-
         <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-        <footer class="footer" style="position:fixed">
-            <div class="container">
-                <div class="text-center">
-                    &copy; @DateTime.Now.Year - @GlobalConstants.SystemName - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                </div>
-            </div>
-        </footer>
+        
     </div>
 
     <!-- Bootstrap core JavaScript-->

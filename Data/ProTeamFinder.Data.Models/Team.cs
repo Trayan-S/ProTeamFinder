@@ -21,7 +21,7 @@
         public string Tag { get; set; }
 
         [MaxLength(1000)]
-        public string Information { get; set; }
+        public string Description { get; set; }
 
         public string CaptainId { get; set; }
 

@@ -3611,7 +3611,8 @@
         "dependencies": {
           "ProTeamFinder.Data.Common": "1.0.0",
           "ProTeamFinder.Data.Models": "1.0.0",
-          "ProTeamFinder.Services.Mapping": "1.0.0"
+          "ProTeamFinder.Services.Mapping": "1.0.0",
+          "ProTeamFinder.Web.ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ProTeamFinder.Services.Data.dll": {}

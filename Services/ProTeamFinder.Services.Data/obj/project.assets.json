@@ -382,6 +382,20 @@
         "runtime": {
           "bin/placeholder/ProTeamFinder.Services.Mapping.dll": {}
         }
+      },
+      "ProTeamFinder.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "ProTeamFinder.Data.Models": "1.0.0",
+          "ProTeamFinder.Services.Mapping": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProTeamFinder.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProTeamFinder.Web.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -1190,6 +1204,11 @@
       "type": "project",
       "path": "../ProTeamFinder.Services.Mapping/ProTeamFinder.Services.Mapping.csproj",
       "msbuildProject": "../ProTeamFinder.Services.Mapping/ProTeamFinder.Services.Mapping.csproj"
+    },
+    "ProTeamFinder.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../../Web/ProTeamFinder.Web.ViewModels/ProTeamFinder.Web.ViewModels.csproj",
+      "msbuildProject": "../../Web/ProTeamFinder.Web.ViewModels/ProTeamFinder.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1197,6 +1216,7 @@
       "ProTeamFinder.Data.Common >= 1.0.0",
       "ProTeamFinder.Data.Models >= 1.0.0",
       "ProTeamFinder.Services.Mapping >= 1.0.0",
+      "ProTeamFinder.Web.ViewModels >= 1.0.0",
       "StyleCop.Analyzers >= 1.2.0-beta.304"
     ]
   },
@@ -1239,6 +1259,9 @@
             },
             "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj": {
               "projectPath": "C:\\ClashFinderApp\\Services\\ProTeamFinder.Services.Mapping\\ProTeamFinder.Services.Mapping.csproj"
+            },
+            "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.ViewModels\\ProTeamFinder.Web.ViewModels.csproj": {
+              "projectPath": "C:\\ClashFinderApp\\Web\\ProTeamFinder.Web.ViewModels\\ProTeamFinder.Web.ViewModels.csproj"
             }
           }
         }
