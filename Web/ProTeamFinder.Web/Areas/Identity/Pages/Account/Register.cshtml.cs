@@ -14,9 +14,11 @@
     using Microsoft.AspNetCore.Identity.UI.Services;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.RazorPages;
+    using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.WebUtilities;
     using Microsoft.Extensions.Logging;
     using ProTeamFinder.Data.Models;
+    using ProTeamFinder.Services.Data;
 
     [AllowAnonymous]
     public class RegisterModel : PageModel
@@ -25,17 +27,20 @@
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly IServerRegionsService serverRegionsService;
 
         public RegisterModel(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            IServerRegionsService serverRegionsService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            this.serverRegionsService = serverRegionsService;
         }
 
         [BindProperty]
@@ -45,12 +50,21 @@
 
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
+        public IEnumerable<SelectListItem> ServerRegionItems { get; set; }
+
         public class InputModel
         {
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
+
+            [Required]
+            [StringLength(16, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
+            public string SummonerName { get; set; }
+
+            [Required]
+            public int ServerRegionId { get; set; }
 
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
@@ -66,6 +80,9 @@
 
         public async Task OnGetAsync(string returnUrl = null)
         {
+            this.ServerRegionItems = this.serverRegionsService
+                .GetKeyValuePairs()
+                .Select(x => new SelectListItem(x.Value, x.Key));
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
@@ -76,7 +93,7 @@
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email };
+                var user = new ApplicationUser { UserName = this.Input.Email, Email = this.Input.Email, SummenerName = this.Input.SummonerName, ServerRegionId = this.Input.ServerRegionId };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

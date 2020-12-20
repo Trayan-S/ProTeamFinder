@@ -172,6 +172,9 @@ namespace ProTeamFinder.Data.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<bool>("AccountVerify")
+                        .HasColumnType("bit");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -188,6 +191,9 @@ namespace ProTeamFinder.Data.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -221,6 +227,14 @@ namespace ProTeamFinder.Data.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("ServerRegionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SummenerName")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
@@ -239,6 +253,8 @@ namespace ProTeamFinder.Data.Migrations
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.HasIndex("ServerRegionId");
 
                     b.ToTable("AspNetUsers");
                 });
@@ -277,6 +293,26 @@ namespace ProTeamFinder.Data.Migrations
                     b.HasIndex("TeamId");
 
                     b.ToTable("ApplicationUserTeams");
+                });
+
+            modelBuilder.Entity("ProTeamFinder.Data.Models.ServerRegion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Abbreviation")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ServerRegions");
                 });
 
             modelBuilder.Entity("ProTeamFinder.Data.Models.Setting", b =>
@@ -318,7 +354,11 @@ namespace ProTeamFinder.Data.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<string>("BackgroundImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("CaptainId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreatedOn")
@@ -331,6 +371,10 @@ namespace ProTeamFinder.Data.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -342,6 +386,9 @@ namespace ProTeamFinder.Data.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
+                    b.Property<int>("ServerRegionId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Tag")
                         .IsRequired()
                         .HasMaxLength(3)
@@ -352,6 +399,8 @@ namespace ProTeamFinder.Data.Migrations
                     b.HasIndex("CaptainId");
 
                     b.HasIndex("IsDeleted");
+
+                    b.HasIndex("ServerRegionId");
 
                     b.ToTable("Teams");
                 });
@@ -407,6 +456,17 @@ namespace ProTeamFinder.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("ProTeamFinder.Data.Models.ApplicationUser", b =>
+                {
+                    b.HasOne("ProTeamFinder.Data.Models.ServerRegion", "ServerRegion")
+                        .WithMany("ApplicationUsers")
+                        .HasForeignKey("ServerRegionId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("ServerRegion");
+                });
+
             modelBuilder.Entity("ProTeamFinder.Data.Models.ApplicationUserTeam", b =>
                 {
                     b.HasOne("ProTeamFinder.Data.Models.ApplicationUser", "ApplicationUser")
@@ -428,9 +488,19 @@ namespace ProTeamFinder.Data.Migrations
                 {
                     b.HasOne("ProTeamFinder.Data.Models.ApplicationUser", "Captain")
                         .WithMany()
-                        .HasForeignKey("CaptainId");
+                        .HasForeignKey("CaptainId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("ProTeamFinder.Data.Models.ServerRegion", "ServerRegion")
+                        .WithMany("Teams")
+                        .HasForeignKey("ServerRegionId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("Captain");
+
+                    b.Navigation("ServerRegion");
                 });
 
             modelBuilder.Entity("ProTeamFinder.Data.Models.ApplicationUser", b =>
@@ -442,6 +512,13 @@ namespace ProTeamFinder.Data.Migrations
                     b.Navigation("Logins");
 
                     b.Navigation("Roles");
+                });
+
+            modelBuilder.Entity("ProTeamFinder.Data.Models.ServerRegion", b =>
+                {
+                    b.Navigation("ApplicationUsers");
+
+                    b.Navigation("Teams");
                 });
 
             modelBuilder.Entity("ProTeamFinder.Data.Models.Team", b =>

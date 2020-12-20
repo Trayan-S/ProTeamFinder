@@ -23,12 +23,22 @@
         [MaxLength(1000)]
         public string Description { get; set; }
 
+        [Required]
+        [Url]
+        public string ImageUrl { get; set; }
+
+        [Url]
+        public string BackgroundImageUrl { get; set; }
+
+        public int ServerRegionId { get; set; }
+
+        public virtual ServerRegion ServerRegion { get; set; }
+
+        [Required]
         public string CaptainId { get; set; }
 
-        public ApplicationUser Captain { get; set; }
+        public virtual ApplicationUser Captain { get; set; }
 
         public virtual ICollection<ApplicationUserTeam> ApplicationUserTeams { get; set; }
-
-        // Add images,
     }
 }

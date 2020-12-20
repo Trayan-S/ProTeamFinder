@@ -1,13 +1,12 @@
 ﻿@page
 @model RegisterModel
-@{
-    ViewData["Title"] = "Register";
-}
+@{ ViewData["Title"] = "Register";
+                var serverRegionItems = this.Model.ServerRegionItems; }
 
 <div class="card card-authentication1 mx-auto">
     <div class="card-body ">
         <div class="text-center">
-            <img src="~/images/logo-icon.png" alt="logo icon"/>
+            <img src="~/images/logo-icon.png" alt="logo icon" />
         </div>
         <div class="card-title text-uppercase text-center py-3">@ViewData["Title"]</div>
         <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
@@ -41,6 +40,16 @@
                     </div>
                     <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                 </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.SummonerName"></label>
+                <input asp-for="Input.SummonerName" class="form-control" placeholder="Enter your in game name" />
+                <span asp-validation-for="Input.SummonerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.ServerRegionId"></label>
+                <select asp-for="Input.ServerRegionId" asp-items="serverRegionItems" class="form-control dropdown-toggle"></select>
+                <span asp-validation-for="Input.ServerRegionId" class="text-danger"></span>
             </div>
             <div class="form-group mt-5">
                 <button type="submit" class="btn btn-light btn-outline-white btn-block">Register</button>

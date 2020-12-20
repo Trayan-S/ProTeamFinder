@@ -1,6 +1,7 @@
 ﻿namespace ProTeamFinder.Data
 {
     using System;
+    using System.ComponentModel.DataAnnotations;
     using System.Linq;
     using System.Reflection;
     using System.Threading;
@@ -25,9 +26,12 @@
 
         public DbSet<Setting> Settings { get; set; }
 
+        public DbSet<ApplicationUserTeam> ApplicationUserTeams { get; set; }
+
         public DbSet<Team> Teams { get; set; }
 
-        public DbSet<ApplicationUserTeam> ApplicationUserTeams { get; set; }
+        [Required]
+        public DbSet<ServerRegion> ServerRegions { get; set; }
 
         public override int SaveChanges() => this.SaveChanges(true);
 

@@ -3,6 +3,7 @@ namespace ProTeamFinder.Data.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
 
     using Microsoft.AspNetCore.Identity;
     using ProTeamFinder.Data.Common.Models;
@@ -27,6 +28,20 @@ namespace ProTeamFinder.Data.Models
         public bool IsDeleted { get; set; }
 
         public DateTime? DeletedOn { get; set; }
+
+        [Required]
+        [StringLength(16, MinimumLength = 3)]
+        public string SummenerName { get; set; }
+
+        public bool AccountVerify { get; set; }
+
+        [Url]
+        public string ImageUrl { get; set; }
+
+        [Required]
+        public int ServerRegionId { get; set; }
+
+        public virtual ServerRegion ServerRegion { get; set; }
 
         public virtual ICollection<IdentityUserRole<string>> Roles { get; set; }
 
